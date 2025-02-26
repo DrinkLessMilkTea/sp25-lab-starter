@@ -11,7 +11,7 @@ main:
 
     # Fill the array with 0's
     li t1 0  # t1 is the index
-    li t2 10 # t2 is the size of the array
+    li t2 9 # t2 is the size of the array
 
 loop:
     # Store 0 at the current index
@@ -25,5 +25,6 @@ loop:
     bge t2 t1 loop
 
     # Exit the program
+    jal free
     li a0 0
     jal exit
